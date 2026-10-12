@@ -1,0 +1,991 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Confi Dental Smilez | Dental Clinic in Keelkattalai, Chennai</title>
+<meta name="description" content="Confi Dental Smilez in Keelkattalai, Chennai. Prosthodontics, crowns and bridges, implants, root canal and cosmetic dentistry with Dr. D. Ramyaa Karthies. Book via Practo.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --navy: #000d21;
+    --teal: #006a61;
+    --teal-light: #89f5e7;
+    --paper: #f8f9fa;
+    --panel: #f3f4f5;
+    --ink: #44474d;
+    --white: #ffffff;
+    --radius: 16px;
+    --shadow: 0 8px 24px rgba(0, 13, 33, 0.08);
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+    font-size: 15px;
+    line-height: 1.6;
+    color: var(--ink);
+    background: var(--paper);
+  }
+  img { max-width: 100%; display: block; }
+  a { color: inherit; text-decoration: none; }
+
+  h1, h2, h3 {
+    font-family: 'Playfair Display', Georgia, serif;
+    color: var(--navy);
+    line-height: 1.2;
+    letter-spacing: -0.5px;
+  }
+  h1 { font-size: 48px; font-weight: 600; }
+  h2 { font-size: 40px; font-weight: 600; }
+  h3 { font-size: 22px; font-weight: 600; }
+
+  .eyebrow {
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    color: var(--teal);
+    margin-bottom: 16px;
+  }
+
+  .container { max-width: 1184px; margin: 0 auto; padding: 0 48px; }
+  section { padding: 96px 0; }
+
+  /* Buttons */
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 16px 36px;
+    border-radius: 999px;
+    font-weight: 600;
+    font-size: 16px;
+    transition: transform 0.2s ease, background 0.2s ease;
+    cursor: pointer;
+    border: none;
+  }
+  .btn:hover { transform: translateY(-1px); }
+  .btn-primary { background: var(--teal); color: var(--white); box-shadow: 0 4px 10px rgba(0, 106, 97, 0.25); }
+  .btn-primary:hover { background: #005a52; }
+  .btn-outline { background: rgba(255, 255, 255, 0.8); color: var(--navy); border: 1px solid rgba(0, 13, 33, 0.12); }
+  .btn-dark { background: var(--navy); color: var(--white); }
+  .btn-glass { background: rgba(255, 255, 255, 0.12); color: var(--white); border: 1px solid rgba(255, 255, 255, 0.2); backdrop-filter: blur(6px); }
+
+  /* Header */
+  header {
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    background: rgba(248, 249, 250, 0.92);
+    backdrop-filter: blur(8px);
+    border-bottom: 1px solid rgba(0, 13, 33, 0.06);
+  }
+  .nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 72px;
+  }
+  .brand {
+    font-family: 'Playfair Display', serif;
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--navy);
+  }
+  .brand span { color: var(--teal); }
+  .nav-links { display: flex; gap: 28px; list-style: none; }
+  .nav-links a { font-weight: 500; font-size: 14px; color: var(--navy); }
+  .nav-links a:hover { color: var(--teal); }
+  .nav-cta { padding: 10px 22px; font-size: 14px; }
+  .menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 26px;
+    color: var(--navy);
+    cursor: pointer;
+  }
+
+  /* Hero */
+  .hero { padding: 96px 0 80px; }
+  .hero-grid {
+    display: grid;
+    grid-template-columns: 7fr 5fr;
+    gap: 64px;
+    align-items: center;
+  }
+  .pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 6px 14px;
+    background: var(--white);
+    border: 1px solid rgba(0, 106, 97, 0.2);
+    border-radius: 999px;
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--teal);
+    margin-bottom: 24px;
+  }
+  .pill::before {
+    content: '';
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--teal);
+  }
+  .hero h1 { margin-bottom: 24px; }
+  .hero p.lead { font-size: 17px; max-width: 540px; margin-bottom: 36px; }
+  .hero-ctas { display: flex; gap: 16px; flex-wrap: wrap; margin-bottom: 40px; }
+  .chips { display: flex; gap: 12px; flex-wrap: wrap; }
+  .chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 16px;
+    background: var(--white);
+    border-radius: 12px;
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--navy);
+    box-shadow: var(--shadow);
+  }
+  .chip::before { content: '✓'; color: var(--teal); font-weight: 700; }
+
+  .hero-visual {
+    position: relative;
+    height: 540px;
+    border-radius: 24px;
+    overflow: hidden;
+    background: linear-gradient(160deg, #dfe9e8 0%, #b7d4d0 100%);
+    box-shadow: 0 25px 50px -12px rgba(0, 13, 33, 0.2);
+  }
+  .hero-visual .caption {
+    position: absolute;
+    left: 24px;
+    right: 24px;
+    bottom: 24px;
+    padding: 16px;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 16px;
+  }
+  .caption small {
+    display: block;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: var(--teal);
+  }
+  .caption strong { color: var(--navy); font-size: 16px; }
+
+  /* Placeholder for images to be uploaded */
+  .placeholder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 24px;
+    color: var(--ink);
+    font-size: 13px;
+    background: repeating-linear-gradient(45deg, #e9eeee, #e9eeee 12px, #dfe7e6 12px, #dfe7e6 24px);
+    border: 1px dashed rgba(0, 106, 97, 0.35);
+  }
+
+  /* About */
+  .about-grid {
+    display: grid;
+    grid-template-columns: 5fr 7fr;
+    gap: 64px;
+    align-items: center;
+  }
+  .portrait {
+    height: 580px;
+    border-radius: 24px;
+    overflow: hidden;
+    box-shadow: 0 25px 50px -12px rgba(0, 13, 33, 0.2);
+  }
+  .about-copy h2 { margin-bottom: 24px; }
+  .about-copy p { margin-bottom: 16px; }
+  .cred-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin: 32px 0;
+  }
+  .cred {
+    background: var(--white);
+    border-radius: var(--radius);
+    padding: 20px 22px;
+    box-shadow: var(--shadow);
+  }
+  .cred small {
+    display: block;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: var(--teal);
+    margin-bottom: 6px;
+  }
+  .cred span { color: var(--navy); font-weight: 600; font-size: 15px; }
+
+  /* Treatments */
+  .section-head { max-width: 680px; margin-bottom: 56px; }
+  .section-head h2 { margin-bottom: 16px; }
+  .treatments {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+  }
+  .treatment {
+    background: var(--white);
+    border-radius: 20px;
+    padding: 36px 32px;
+    box-shadow: var(--shadow);
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.25s ease;
+  }
+  .treatment:hover { transform: translateY(-4px); }
+  .treatment .icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 14px;
+    background: rgba(0, 106, 97, 0.1);
+    color: var(--teal);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    margin-bottom: 24px;
+  }
+  .treatment h3 { margin-bottom: 12px; }
+  .treatment p { flex: 1; margin-bottom: 20px; }
+  .treatment a {
+    color: var(--teal);
+    font-weight: 600;
+    font-size: 14px;
+  }
+  .treatment-note {
+    margin-top: 40px;
+    padding: 24px 28px;
+    background: var(--white);
+    border-radius: var(--radius);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+    box-shadow: var(--shadow);
+  }
+  .treatment-note a { color: var(--teal); font-weight: 600; white-space: nowrap; }
+
+  /* Experience */
+  .experience { background: var(--panel); }
+  .experience-grid {
+    display: grid;
+    grid-template-columns: 6fr 6fr;
+    gap: 64px;
+    align-items: center;
+  }
+  .experience-visual {
+    height: 480px;
+    border-radius: 24px;
+    overflow: hidden;
+  }
+  .pillars { display: flex; flex-direction: column; gap: 28px; }
+  .pillar { display: flex; gap: 20px; }
+  .pillar .num {
+    flex-shrink: 0;
+    width: 44px;
+    height: 44px;
+    border-radius: 12px;
+    background: var(--navy);
+    color: var(--teal-light);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+  }
+  .pillar h3 { font-size: 20px; margin-bottom: 6px; }
+
+  /* Gallery */
+  .gallery-head { text-align: center; max-width: 680px; margin: 0 auto 56px; }
+  .gallery-head h2 { margin-bottom: 16px; }
+  .gallery {
+    display: grid;
+    grid-template-columns: 7fr 5fr;
+    grid-template-rows: 340px 340px;
+    gap: 24px;
+  }
+  .gallery .tile {
+    position: relative;
+    border-radius: 24px;
+    overflow: hidden;
+  }
+  .gallery .tile.wide { grid-row: 1; }
+  .gallery .tile.photo-doctor { grid-column: 1 / span 2; grid-row: 2; }
+  .tile .label {
+    position: absolute;
+    left: 24px;
+    right: 24px;
+    bottom: 24px;
+    padding: 16px 20px;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 16px;
+  }
+  .tile .label small {
+    display: block;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: var(--teal);
+  }
+  .tile .label strong { color: var(--navy); font-size: 15px; }
+  .tile.photo-doctor img { width: 100%; height: 100%; object-fit: cover; object-position: center 35%; }
+
+  /* Reviews */
+  .reviews { background: var(--navy); color: var(--white); }
+  .reviews h2, .reviews h3 { color: var(--white); }
+  .reviews .eyebrow { color: var(--teal-light); }
+  .reviews .section-head p { color: rgba(255, 255, 255, 0.75); }
+  .rating-badge {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 20px;
+    padding: 24px 28px;
+    margin-bottom: 48px;
+    max-width: 640px;
+  }
+  .rating-badge .score {
+    font-family: 'Playfair Display', serif;
+    font-size: 44px;
+    font-weight: 700;
+    color: var(--teal-light);
+  }
+  .stars { color: #f5c542; letter-spacing: 3px; font-size: 18px; }
+  .rating-badge p { color: rgba(255, 255, 255, 0.8); font-size: 14px; }
+  .reviews-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+  }
+  .review {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+  }
+  .review p { color: rgba(255, 255, 255, 0.9); flex: 1; margin-bottom: 24px; }
+  .review .by { font-size: 13px; color: rgba(255, 255, 255, 0.6); }
+  .review .by strong { color: var(--white); display: block; font-size: 14px; }
+  .reviews .more {
+    margin-top: 40px;
+    text-align: center;
+  }
+
+  /* Location */
+  .location-grid {
+    display: grid;
+    grid-template-columns: 6fr 6fr;
+    gap: 64px;
+    align-items: center;
+  }
+  .location-copy h2 { margin-bottom: 20px; }
+  .location-copy > p { margin-bottom: 32px; }
+  .details { display: flex; flex-direction: column; gap: 16px; margin-bottom: 32px; }
+  .detail {
+    background: var(--panel);
+    border-radius: var(--radius);
+    padding: 20px 22px;
+  }
+  .detail h3 { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 15px; font-weight: 600; margin-bottom: 6px; }
+  .detail p { font-size: 15px; }
+  .detail a.phone { color: var(--navy); font-weight: 600; font-size: 16px; }
+  .map-card {
+    position: relative;
+    height: 480px;
+    border-radius: 24px;
+    overflow: hidden;
+    background: #e5ebea;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+  }
+  .map-card .map-tag {
+    position: absolute;
+    left: 24px;
+    right: 24px;
+    bottom: 24px;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 16px;
+    padding: 16px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+  }
+  .map-card .map-tag strong { color: var(--navy); display: block; font-size: 16px; }
+  .map-card .map-tag span { font-size: 13px; }
+  .map-card .map-tag a {
+    background: var(--teal);
+    color: var(--white);
+    padding: 10px 18px;
+    border-radius: 999px;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
+    white-space: nowrap;
+  }
+
+  /* FAQ */
+  .faq { background: var(--panel); }
+  .faq-wrap { max-width: 860px; margin: 0 auto; }
+  .faq-head { text-align: center; margin-bottom: 56px; }
+  .faq-head h2 { margin: 16px 0; }
+  .faq-item {
+    background: var(--white);
+    border-radius: var(--radius);
+    margin-bottom: 16px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+  }
+  .faq-question {
+    width: 100%;
+    background: none;
+    border: none;
+    padding: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    text-align: left;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--navy);
+    cursor: pointer;
+  }
+  .faq-question .chev { transition: transform 0.25s ease; color: var(--teal); font-size: 14px; }
+  .faq-item.open .chev { transform: rotate(180deg); }
+  .faq-answer {
+    display: none;
+    padding: 0 24px 24px;
+  }
+  .faq-item.open .faq-answer { display: block; }
+  .faq-answer p a { color: var(--teal); font-weight: 600; }
+
+  /* Final CTA */
+  .final-cta { padding: 96px 0; }
+  .cta-card {
+    position: relative;
+    overflow: hidden;
+    background: var(--navy);
+    border-radius: 24px;
+    padding: 72px;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  }
+  .cta-card::after {
+    content: '';
+    position: absolute;
+    width: 384px;
+    height: 384px;
+    right: -96px;
+    bottom: -96px;
+    border-radius: 50%;
+    background: rgba(0, 106, 97, 0.3);
+    filter: blur(32px);
+  }
+  .cta-card > * { position: relative; z-index: 1; }
+  .cta-card .eyebrow { color: var(--teal-light); }
+  .cta-card h2 { color: var(--white); margin-bottom: 16px; max-width: 700px; }
+  .cta-card p { color: #e1e3e4; font-size: 17px; max-width: 640px; margin-bottom: 40px; }
+  .cta-buttons { display: flex; gap: 16px; flex-wrap: wrap; }
+  .cta-note { margin-top: 24px; font-size: 13px; color: rgba(225, 227, 228, 0.8); }
+
+  /* Footer */
+  footer {
+    background: var(--navy);
+    color: rgba(255, 255, 255, 0.7);
+    padding: 48px 0;
+    font-size: 14px;
+  }
+  .footer-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 32px;
+    flex-wrap: wrap;
+  }
+  footer .brand { color: var(--white); font-size: 20px; }
+  footer a:hover { color: var(--teal-light); }
+
+  /* Floating call button for mobile */
+  .call-float {
+    display: none;
+    position: fixed;
+    right: 16px;
+    bottom: 16px;
+    z-index: 60;
+    background: var(--teal);
+    color: var(--white);
+    padding: 14px 20px;
+    border-radius: 999px;
+    font-weight: 600;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  }
+
+  /* Responsive */
+  @media (max-width: 1024px) {
+    .container { padding: 0 24px; }
+    h1 { font-size: 40px; }
+    h2 { font-size: 32px; }
+    section { padding: 72px 0; }
+    .hero-grid, .about-grid, .experience-grid, .location-grid { grid-template-columns: 1fr; gap: 40px; }
+    .hero-visual { height: 420px; }
+    .portrait { height: 460px; }
+    .treatments, .reviews-grid { grid-template-columns: 1fr 1fr; }
+    .gallery { grid-template-columns: 1fr; grid-template-rows: auto; }
+    .gallery .tile { height: 320px; }
+    .gallery .tile.photo-doctor { grid-column: auto; }
+  }
+
+  @media (max-width: 720px) {
+    .nav-links, .nav-cta { display: none; }
+    .menu-toggle { display: block; }
+    .nav-links.open {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      top: 72px;
+      left: 0;
+      right: 0;
+      background: var(--paper);
+      padding: 24px;
+      gap: 20px;
+      border-bottom: 1px solid rgba(0, 13, 33, 0.08);
+    }
+    .container { padding: 0 20px; }
+    h1 { font-size: 34px; }
+    h2 { font-size: 28px; }
+    section { padding: 64px 0; }
+    .treatments, .reviews-grid, .cred-grid { grid-template-columns: 1fr; }
+    .cta-card { padding: 40px 28px; }
+    .treatment-note { flex-direction: column; align-items: flex-start; }
+    .map-card .map-tag { flex-direction: column; align-items: flex-start; }
+    .call-float { display: block; }
+    .btn { width: 100%; justify-content: center; }
+    .hero-ctas .btn, .cta-buttons .btn { width: 100%; }
+    .rating-badge { flex-direction: column; align-items: flex-start; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="container nav">
+    <a href="#top" class="brand">Confi <span>Dental</span> Smilez</a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#doctor">Dr. Karthies</a></li>
+      <li><a href="#treatments">Treatments</a></li>
+      <li><a href="#experience">Our Approach</a></li>
+      <li><a href="#reviews">Reviews</a></li>
+      <li><a href="#location">Visit Us</a></li>
+      <li><a href="#faq">FAQ</a></li>
+    </ul>
+    <a href="https://www.practo.com/chennai/doctor/d-ramyaa-karthies" target="_blank" rel="noopener" class="btn btn-primary nav-cta">Book on Practo</a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open menu">&#9776;</button>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- SECTION 1: HERO -->
+  <section class="hero">
+    <div class="container hero-grid">
+      <div>
+        <div class="pill">CLINIC OPERATORY SUITE</div>
+        <h1>A Healthier Smile Starts With the Right Care.</h1>
+        <p class="lead">Thoughtful dental care begins with understanding your concerns. Explore your options, get to know your dentist, and take the next step towards lasting oral health.</p>
+        <div class="hero-ctas">
+          <a href="https://www.practo.com/chennai/doctor/d-ramyaa-karthies" target="_blank" rel="noopener" class="btn btn-primary">Book an Appointment &rarr;</a>
+          <a href="#treatments" class="btn btn-outline">Explore Treatments</a>
+        </div>
+        <div class="chips">
+          <span class="chip">Practo Verified Clinic</span>
+          <span class="chip">Doctor-Led Care</span>
+          <span class="chip">ISO Sterilization</span>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="placeholder" style="position:absolute; inset:0;">
+          Upload: clinic operatory photo (Figma hero image)
+        </div>
+        <div class="caption">
+          <small>Clinic Operatory Suite</small>
+          <strong>Serene, Ergonomic Restorative Environment</strong>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 2: ABOUT THE DENTIST -->
+  <section id="doctor" style="background: var(--white);">
+    <div class="container about-grid">
+      <div class="portrait">
+        <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAf4BiAMBIgACEQEDEQH/xAAcAAACAgMBAQAAAAAAAAAAAAAAAwIEAQUGBwj/xABIEAABAwMDAQYDBgMGAwcDBQABAAIDBBEhBRIxQQYTIlFhcTKBkQcUI0KhsTNSwWJy0eHw8RUkghY0Q1OSssJzotIXJSZEVP/EABkBAQEBAQEBAAAAAAAAAAAAAAABAgQDBf/EACQRAQEAAgICAwACAwEAAAAAAAABAhEDIRIxBBNBIjIzQlEU/9oADAMBAAIRAxEAPwD1ZCEKAQhCAQhCAQhCAQhCAQhCAQhCAQhCAQhCAQhCAQhCAQhCAQhCAQhCAQhCAQhCAQhCAQhCAQhCAQhCAQhCAQhCAQhCAQhCAQhCAQhCAQhCAQhCAQhCAQhCAQhCAQhCAQhCAQhCAQhCAQhCAQhBQCFr9T1zS9JbfUa6GAgX2udm3suYm+1TsxHIWtlq5APztgO0/MounboXnc32v6BHfu4K2QebYhb90ofbJom+zqKtDf59gQ09JQvM3fbLpDW7v+GVxaTYHw5T2fbH2cLWl1PqDSeR3QNv1RHoqFxem/aj2VrpWRffJqeRxx94hLQPQnhdZR11JXM30VTDO3n8N4d+yCwhGOiEAhCEAhCEAhCEAhCEAhCEAhCEAhCEAhCEAhCEAhCEAhCEAhCEAhCEAhCEAhCEAhCEAhCEAhCEAi9j7KtqOoUml0klXXzshp4xd8juAvJe1f2sT1DJKXs819Owkj728DcR5tB490XT1itr6ekje6aeOENaXuc8jheX9uvtPidD9z7NzOL3Nu+pY34bj4RuHPVeV1lZVV8plrKiSd5yXSu3FIc4HIFj1yptfRlXWVFbO6eqnfLIfzvJJP1SNxONxKi6wKibqptNxdtF/VEQkeXBjXOAFzbooX8ygm2bG6GzRvfeNhu3nYT1UHCVhs4FpHmi7HRncX7r4WQ4FtpCQfyvtlERu1/x8qzQVc9BL3tFVT00gyHQv2pBju3cLOA5IP7pchc0WP8Asg9J7MfazrOnvbBrI/4jTi3jIDZGj3GHfNesdmu1ukdpIC/Tagd402fC8bXA/wBfcL5gY4AFr/E0/UeybSVE9FUCemnkhlabtkjO0hFfW6F472K+1hzDHRdpsg+EVYxb+8F65SVMFbTsqKWVksUg8L2HBRDkIQgEIQgEIQgEIQgEIQgEIQgEIQgEIQgEIQgEIQgEIQgEIQgEIQgEIQgEIQgEIQgFV1PUaPSaGWt1CdkNPELuc4/oPMrOp6hSaVQy1tfM2GniF3ucbfIepXzz277X1ParVC4OdHp8TrU8A4/vHzJS3Syfq1297d1XaWeSkpnmHSgbtiLLOkscFx/Wy4veRhSO1osXEX8glk3ULUu8PB4S92Vg3usKokVi91hSsgk2PcQNwBPF8BZ2bX7XYcPyuTIIhJYOIFzyeFYlo5SGxyWv+U3sCPQqhDYHyRl7I3Oa3Lg0XLR5+yXYlrRktPHVWKeWpo3uLTJGBhxtgD/BPqKYTRyywMG+MAyiM+Egmwe3+oRNqAjJuWhx28+YClLaVpNrP6m/Kv00BnEcjSWB5EchxYXx/mq5idve1zfxIsOHR2TlBrx6qQcRi+PJZ2bnSbeguoWsoqYK6fsf201PspVtfBIZ6Jx/FpZDgj+yehXK3U7+FB9U9nNf0/tFp7K3TZ2vYbB7L+KM+Th0K2i+XOyfaSt7Maq2toXBzXWbPAfhlb5FfSmhaxR67pcOo6e/fDKL55aeoPqEF9CEIBCEIBCEIBCEIBCEIBCEIBCEIBCEIBCEIBCEIBCEIBCEIBCEIBCEIBFwMk2HmhcB9rvauTQ9HZQUL9lbWiwe05ZGOT/RB559p3bCftDqr6GBwbptI+zGg/xXDBcfP0XEl53HkqJPUm5UDk8qSbWpO8ThlQJznlZHqi3ThXSMHhATWQSzC8UbnAdeB9ThMkpJYbd4Ysi9myBx+dkFfab8FZY27w0m3urcFLUTAGKMvcTYBtyVfgpXgPbPA6JwI+IAEeubKivR0m0uvLtBttJGHH0ur/3aR0BG6zBhu8XjJ8r/AJStjp9dFRQ9y7uo3uILg+xDvlkX9VQ1PUH0jjDA6SJriCNlv9EfqtIjHA+Sm72lk37fBNEwbnM8nW6jCrVEYheJYJBJfEoYLW9W+nF0p+ofeZhK4ugq2DEseAff1UDKZ5DISI5gb3Aw48fJTZpbpZB4Io5WmJ5uQ5ub5uP1St96sF93uu5rz1db/KyrSPvLdg2XAuB19ViF5FUXH8wt7IIugMTpXOsQGluDyTwqsrCH2z5LZRzRCZz5QXMALy09SBgKtI10jS/YLEY9yoqkRYoKfUj8d3GMenklyMDYIpA4EvLvD5AW/wA0EQfNd79lPa//ALPaoaGtkLdOqzYnnu39D81wAU22LbFSj6+x/ndC4P7Idfl1fs2KeqeHT0Tu6cb3Lm28JK7xF0EIQiBCEIBCEIBCEIBCEIBCEIBCEIBCEIBCEIBCEIBCEIBCEIBCEIE1tVHRUc9VKfw4Yy93sBdfMHajXKjtHrVTqdTf8R1omdGMHAC9f+2vXDQaBFpsDyyWtd4y3/yxz9bheGCxvcZvdQQLvNYPFxlT23KY2M84t5LQw2GRhaZBsY7Ic5vI9B1WJAxzz3THbb/m59ypOu6QukLndLEnA8k9pbH8VnkcBgwERhtO+W25t7ZG8q3FpjXMDnysiBNiWx3z+iTG6Z+CX2vyMfUq/BYO2vp5HOAu0xjxH5n+iBselUgLRNUlkR/NUSckeTR/isnYJHR6buawE2MsnT2NwFapH00bu9i02WR45DYt7j73vZUtSndM28lNWta0+G8bdo+YN1RRqe7FwGt88PHPoFVD2WALHEX438LL/GCXMe73SRCXDwRuHoSoSJvZCAbBxZ06OB+WFstPoG1rSYZxdo+B7but6ZyqdPpdZOLxwOc3+zcq5TaNWQyBz2bd2Rtdc29lnKx6YxKp06Wme3fFJ3bj4S4cg4K174XxvII+E8rsKEsbGaeq3tYT4w+7rHGc5AU6rs6XMMsAaWuI4duBHoffovH7dV63i3HDlpfKWNwHGwJCeZfA1gy1p3Gw58vqr+qae+DZtvdwO7HC1f8ADe0X44wveZSvDLG4h8RddoIa5x3EXH63VWeAROIMocR6LYmISQlpdG0nnzKpztZHyWSAjjdkKs7VLeqy02QbX8N7eqxdFdd9nOvP0LtJSy79sMx7mbyLT/gV9IxOa+MOabgr5EjOF9J/Zrq51bstSSOk3vjYI3+hGMqK6tCEIgQhCAQhCAQhCAQhCAQhCAQhCAQhCAQhCAQhCAQhCAQhCAQhCDwj7b6p0va6Cnd8EFK0t93E3/YfRefYXV/afXN1DtzqDmXLISIAf7oz+pK5UgXQqcLA4kuIDRm3mmTvJaI2N2sCg2wF/IpjB38wByxvxFVEqOl71xJc1rBySP2VnuY4h+I18jdxAPAJ+ak2ZkTdzgGtZ8LbdfNIbNJNL3rgbtbZtzho/wAUFuGGAyFs53AZdaTYG/5cLf0enUzYe9jdt2i26U3v7X4/RaKgjqJn2g2lvBdtH0811ukaLUPcHTufKHY2kkADy/deeWcj1w47VeKjgmLmn7zUF+cPc1pHmc8rH/Z4sI/CdFzh7i9v6LuqDTXxMDO7iDLcD/HlX2UduZA7ptXPlzOjHhjy2o06gpj4o5pXnyj2/ubKlLHp8B8cJ3EcSMP72sfkV65JpVPLcSRtI9WhLboNIz4Wlo8h0T7WvqjyVskDWjuqKVxJ4c3Y23zU6aabvdkDBSNdy5lzf3svUptAo5m2kuT0JKSOztFT+JsQft4Mjif3WLyxZxOIFQQ1jJIpZ5LfGGtBb7nmyt0E2yRwbTESdXXtu9wusdQs2bWbWj+y3n5qnJphBuXAg9On0Xllnt6zBp63T4auR0k1gHjwsvfaVx+u6UKR4kYbgk7RbIXorKfui4yBu3pYYWt1qkZWRPBY0uAwPNenHyarHJxSx5mZn7rtcwkchzbpr4fvNMXNy9uXMaMge1kzUaLuKlwbcWNrW4WaZrzY3Lxa42DxD2XfLuPnZY6rSOvfIsoFbDUYttpGn4s3bkH2VAm3KqMs5svXPsF1B33rUtNc67HME7R5EEA/uvI3WBafMZ912/2QV/3HtzRtPw1bH05+dj/8VGn0Te6EIRAhCEAhCEAhCEAhCEAhCEAhCEAhCEAhCEAhCEAhCEAhCEAq2p1Io9PqKk4EUTnfRWVoO3lQKfslqby8NIgda55NuEWPnHVqx2panVVrxYzSF/8Agqnqhtw0X8lKP4xfi6qJTu2hrG/E4Au91ON5hDw21icnqkvJMr3HqcLIu7ARDHudKAMuBwB5rdaTp1VWuDDHuaLWYQbA+o4WezmiSV8zXvcI4mWu48/IL03TNNpIowynYCwdQc3XLy82uo6+Hh33Wo0/QWxOb31t4ADImAf0sunoqJ8bNrgGdLNPRWYKWNuRHtP818q0xgB4uVyXLbqmEhkLSAFbjiFs3Sohf8tldYrjNpkqvhN/CfkUs3/MMhXnNCTK3re/qtaJVT5D6KEjQfiaHH16J4Q4ArDSkY/T9EmWEHgK8eCluaCi7aeaHxcXH+ui11TTguJP0XRSRjOOnK188bdvA+qg4PXaJhvIGYtlp6rlCDTSuLXOYw/Dn4fmu/1uwgs0XJwuJ1BrY52h+RkH5hdfx899OT5GLV1bj4txu0OHTz62Wulw4iw+S2jWEeF1juaRf9lrZBkG1l1uNDoui7BOt2y0XH/9pv8AVc7wuq+zeldU9s9LAuAyoDgbc2BRY+l0IQoBCEIBCEIBCEIBCEIBCEIBCEIBCEIBCEIBCEIBCEIBCEIDPReUfbbq/eUNLplNKMzbpwDwADYH52Xp1VW09OwmSdjSPVeAfabqdHqPaaX7mTKI2hr33G1x9Bb91Ny+mvGybcmyF0t9mGtF3PPAHmokt3+EECyyTdShGd2b3s3HK0yW74rLaaJo82oTttiK9nO8lf0Ls5JqNttgLgOeRgL1HRdFhoY2ERsLwLDGGrm5ufx6jq4uHfdVtI0ampIo2xN+EAA+vzW+hjt+UAeym2MX/UJ7GeQXBbb27ZNMNapNBvyptbnqmbD5KwtYYM4yVcY5IiCsNC9MHnkw83BHmkyGx2jgJkqrSPNsrVTFg84WTwltcsk4K83oxjyUHEKVgBhJkIVQuXiw5KpztxZWnuwq0rhYrNWRzesttg8LgtWjJlNrCwuu+1zxQnxWweFw+o3MRebXtcr24Lp4c83Gou19PIG2uz4XX4HktfUt4e21jg26H/X7q0ZbO238J3ZHUKkDuu3z/ovoR88kjC9W+xDT21WozV4yKYFtvUgW/qvKeSfI4XsP2CVAEur0m3nZI19+QPDZKsewIR0QoBCEIBCEIBCEIBCEIBCEIBCEIBCEIBCEIBCEIBCEIBUdXrm0NPvcSCcC3KvLn9fDpahjSAQ0gi68efK44dPf4+Eyz1ValNVUML54oWMccMdcut6leb/axo1FSCLU4jsqJJGxFg/Nhxv+i9XZEGtba7bi5svNPthpnyP052XAOtb3uL/Wy5fj2+Tq5pPHp5eGkgngN5J4Wz7OULtR1GOIX7u+T6LWVMEkUr2ShwLXFu0ixB9l6D9mumPcX1EjSLCwBC6+bLxxrk4sfLJ22kabDSQtjjb4W8BbW1uiIWBrSPJQme4gtjGfMr5lu30Z10xPUR0zS6Rw9lSi1OWpddrrReUbST9VkaYJphJIC6QfzH9vJbKOmBG1xNvV17LWKZKctUY47g92PNwdlOpdYja60kgd/RSn0eCbxGaRjhwWOIWj1fs1LJHuo5y+YXLWvft3fPouieLmyuTsIK2nnwx7TYflyPqrTrWx9V447tDW6bWtgqYaqFwaAd/wgjqLcrrezna2KtiH3idjThrbkhas0k3XZPttyqkoB4WBVMkb4TkdFHeHDnK8snviXYA9U5rC4fJLIyPVWYSL2WWtlmOw4A9lUmFlsZCLKlNZSrFCQkBU5XHaVsJWqhM07SAvOtud1VxPhXJaix7rtsLBdVqbHl5aOfRaGuicwOYeQF7cd1XlyY7cZUt7p9ul8KoTteD5K9qIN7O5BWvdkr6WPcfNymqPgcfMZXsf2EACjq5A0F7qgxbrcANDh/VeOv5B62Xs/wBiL3U9C+jkYPxnmoa6+QLAfqqj1j2QhCiBCEIBCEIBCEIBCEIBCEIBCEIBCEIBCEIBCEIBCEIBavVIryBx81tOFWrWbmN+i8ufHeD14MtZqTjdzA32Wj7UafDqEL45HOBZcjaQLeuQQVuN2xrT1DSCPVayqYZyWflvyDy5fPmVxr6Fx28g1HRZI6l1/DeTaHOubD0ycr0rszQNotOYxgti+eST1VLV4ohqNJQtju4HvC426+a6OmYGxtDRYW6L15M7ljGMMJLs9rbjNysFoGQE1gspSWLbdV4PVVfM1g8RsFTl1eGPEbJJD02NurMsTnfCLrmdTk1E1YpqarpqEuNu+lYXmx8lvHHdPxvYKyvqLd1RuaCeXvz+l1Xr6nUqVpMtG61/5jwPkqnaHsfLQdla+uqNT1HUq2KAujaJnMaT5hjeV51VRV+idn9L1On7SvfUV+TRb3bo22uCbuII+Q5XXPj7jly55LrT0B1ZDqN4KuKN4dw2Szh/utfP2UohIZqMPpnnlrHHb9Fzml6lWavFNPXQAtgc2N9TFw24Ntw6DHK7TQ690oNNUO/FaPC453BeOUuHVe2GuSbiemippmMY98hIxcm+5dDTyOk23AvbKosF3+avwtu3A+i8rW7NH3vlTY63i6FK2PkcI2kB1vDfF/mkb3Mtuw7qESLEspHVVnzfzEWWu1DUBG1x3AW6rktS7UVEY2wRSvd0ICsx3UyunbT1kMbbucLe601ZrlJHuAe0uB4vlef1FdqVa+wgrTfBLcLWyaBrL3l9PTVD28gbl7fRjf14/bl/x2Vd2hp43F0kQLDw660s+sUtXMW22F2G55Wqj0PtGBnT5tvUOIVWtoqmnH/M0ssLhkBzcLf1YRLnl/wjVQe9dfm61bhlXXyGeM7viCpP/jO9l04dRy53dYk4+S+iOyunRaY/T2x94TJRsaA59xcgEfSzl88y5GM4svp+kp3S0miTsa2IxiPvGgXBAjLQPkStMxvxlCPp8kKIEIQgEIQgEIQgEIQgEIQgEIQgEIQgEIQgEIQgEIQgFq+0GpQaZp7qmoeGtDm8n1W0JAFzwvLPtWrzV/ddPabRzSeLP5epUs301j727aYkzOYD8Tbs8sqtIGsLWceK39VR7L6m3W+z0NUD+LFeKQHkFuP8Cmai6UmKWIFxF7t/mwvm5zWWn08LuNVJH3uqQzmx7xznWIzbot6wWaAOi1L3F+owOe0scGEOYehW4iF+UyIYCpFt8rIYpgYWI0ScPFr+uVTraNs+XMYSOLi62RbcggZWSwHotm9KFK+qpqSWiqrVVK9haY3GxAOCAV5nrHYP/nd1JqkLKe21hqmuD2NHQ7bh3PK9ZN2ctBHkVrK+kp5wS6HJxf0XRjyZSPDLixyqt2X03QuzmhvoW1kExqBeZ7xiUkdR5ei1epaO6gmjqaJ7DSvP4bAfEw249k91Cxo2iLcBgHySYdJdJVsdThzQ119m47fovPkz8nrx8cw9NnR945veuHhtb5rbUnQJMjWsiZDEMDLh6qzSizgvFu9xOqYGNuQFz2r6jHSQukc7jzXQao8CHF8BeT9s6x8tYKeN9hfIW5N3TE9bXqaon1uQybtsF/DfkrZx6fC0Br9tz83fRL7PUbaeib3krIYwwFzyc38gug0ulqKmkkn0amiipg0u+91I3GS3O1vxfWy3jjbemc8/GNQ3S2MHeNjqcebQB+6bT1dMx4Y54a/+VwsVydbr/aeTs47XR2jgiZ97MEdEyCNriBa7hjgE9VrdK1zXtVe+GSOKudsLtu1rHkehGLr1z+PdbeM5o9Mc8bTxt4uud14RyU8jXWc0i1nZXN03aKWiv3Rlcxn8Wmmw5ntdO1fU46mmjmp3ksl8+noV4zjyl29fOWONmj7ueRo4vjC18uJnFbmqAc8uHXqtPLmRxHAXbh6cOc70dRs31lOy+3dKwbj0uRlfTuhbTpEULXOd3IMG4nN2m39L+y+ZJfAGOadpAvfyK+nOzQ3adBPtLRURsmLXc3LRk+q1tnTctN2i/lwsoQqyEIQgEIQgEIQgEIQgEIQgEIQgEIQgEIQgEIQgEIUJX7GEoKmp1QiZ3YNievkvEO19aavVDI44gjc1pHmSAvQ+2GrGkhDBiaV21hJwM9V47rc43SC2b7Rf0sL/AOvNJ3Wr1HR/Zbr4pu0U2myO209e38ME8SN4+ouPkF6pJeKUNBBaQvmxsr4HslhcWSMILHtNiHDqF73otfUav2F0/VJRS/e3/wAZ75CBgkYA4cbDC5vkcX+0e/Byf6rNWd2sRnFu7ucdVsIzha6VpGpR3/8AJ/qthBgLl/HXFpnCm1tyVBpwmtKjSOwjIUXv2ixVhpu04VeZt8LTOyXSJRMhNhY/JNMZ8llseeLpton7s+XDwAPTCmImws2xCx/mVoNthKfnhKis2M3unwtzlZGFOKwufRYntpR1Z+2E3K8i1y8mtOe3I6L1HX59lG93UcLzmSLvqlzn4vi/kt4XVZs6dJQU0Fe6N1U+ZndNGx0Mm3Zj9V1mmyS6ZF3NPqUU0BJPdVEdjnnxBcvoQ7lzRI28bhY3W/NKWAPhN2kZYePktY569JljvqvM+0nZpk2puOkSt+7Pe4iGR4BgcTdw8yLroexml6Z2a7yqrtTp5axzLANBs0eQ8zddFPT0c38SIB3W4sqFXpmm92QWNtbzXr99vt5f+fF5z2tkirtZkrIQGAANaQLb/UqrSMPdOYb7XEFo8j5re6pp4qq1rIW+Bp8RHCvCggjY2zM2+imXL0fVquRqohE+3RaOFu/vL5uul1kCOVxHABK52nLWMPmV78d3i5+SfyXNOoZtUrqbT4Wb5J5GsDW82vn9F9SQR7C2NrQGxMawW6WHC8w+xzsrs/8A5BVx2c5pZSh3QHl1vbAXqVO/vImyAgh4vcL0jzyOWEIVYCEIQCEIQCEIQCEIQCEIQCEIQCEIQCEIQCEIQCoanO1sfxAW/dXZHbQuY7R6g2lpZXPIAaCc9bBKsec9t64z6js3h4Y47gDwuC1WbdMWk+Llwt1W0kqnVJnqpMHOPdc/O7vJnSO5JurPSW9oH4bHqvSfskljZpurtl1g02wteaR+3u3C2ZDcXxYDBC84kbcMI4cpGIOwbHqL9EuO5pcbq7e1dm+0MXaOsqJYoDGKdgYchwcb8tPl5LqYuF5X9jzrVWpRm+Gxnn1K9VZghcHNjMctO/iy8sZTmlNakhMabLxetPaAev0WSy+TyoAjzUy6w5W5pjsstF8KJAGVF0gBNuFUmqQ0pa3JVwyNHLhdJfI3dZrbKoJTbxDxE49EHvA65yCsWrIs3Kc0fhPKrsOeUx+7Z6KRa5ntRLuptg885XJBvjYOrsgey63X2DY5zrWsuGrKxseoU7g4WafPzW8ZsrtNLYHxNK3lO4xkNJ8J49FqtHh/Ca9uWuFwQtyIxtF1n0Fvga85a0gqvNp1PJzEFeDbG1sKRAISpHPVNBDC1xjiDbfqtPVw7Gk3uSLhdTWNblc7qBA3X+izFcFr2GSHyb+61nZ6gi1HVqekqHlkElzJbktHQepWy7RkGNwvbxC/sq/YSoij7Y6bLUkCDvdr78BpBGfmQvo8P9XBy/2fSbY2wU5gpiIwxmyMNGG4wrEEYhhjiBJDGhuVVp7uY13VwAIvf5/srp5K9XhQhCEQIQhAIQhAIQhAIQhAIQhAIQhAIQhAIQhAIQhAiodt5OB0Xlv2pV/cwMgY8jvjm3kF6Nqsuwcm5/ZeMfaFXio1JlKALsuXOOcXx+ylanpy1XKxtK4MPxEfpz+pWqa27if5clXtRBEUTb3uLlU233XHWw91uRipx2mIhIsdxcD8v8k5kDrBxFwDZ10hhcJg8DF7Y6LoKQxNgAmALpBh1uPRUbf7JHBnaOvp7/FTbgD/AGXD/wDJetgLxfsHVtpe3dNawZUNfCT7i4/VoXtIC4fkz+Tu+Pf4hpNlNpUCLcIBXM6Dg5RkksMKBclON8KhUsxF/NQihfIQ6Q+2FYbAL3NlZaPCml2qvjIcH4LWqUVTTuJYJWF/lfKc51rjpZU30kRl7xjQ2X+YDlXxNrETATcFXXsaad2eAtYXGF43EHd5KVRMWQPO79UnTN7aDtOQKGU9QPqvPBRGpje9xLXflNuq67tTqtNDAY6iYNc4YHX6LURT0rNMMsMvePOQxvJWsZpbdug+z3UPv2mmF/8AGgcWO+uF2BbtaPNeefZ3SzUdVO6UFve5sV6GTuUy1vpYi/jiyRIS3hWH8KtKV5q19bJa65fWJuo5XQ6g8AAFcfq815NrTg8+i1hN1LdRyHauZt6dgPxFznfpb+q1+gyRx6nF3rmtikPdyEi9muwl6xUGqr3ubbY07R8lVa4sIcw5abj3X0sMdYvmZ5byfT/ZOvFTpWnOeHNcYe6du5LmWF/mM/NdAFx3YnujSF1NJvppgyeO/wCVxbkfS30XYg3Atx0VZoQhCIEIQgEIQgEIQgEIQgEIQgEIQgEIQgEIQgEdChQmcGRkkoOa7T15p/gybWPovDNYqjNqU0z873G4PocL1TtrWmKCclwsbn1Xjz2mprmxt4e62fLr+l1G71Cq7c8bnGzuSEuBt5Yxx1+isV4L2GUN/iOAAv8A69FnT2x/eCHbi0NcBjg2wvSPNTjb+I8E4c7Iv6rb1EjW0hLXHcAAL/0WvMI7qMt527m/2h5fsm1dTvpY2Ov3gAabjkWwqivFVuoa2mrIr74ZGyj5HhfRVHUx1lLDVQkOinY17XDggi6+bCS6O7ueF7Z9mksh7IUMczibB2wn+Xc6wXL8mfxldXxr3p1hUQShAPouJ2sOS+9azBOUxxwtNqlJLVtlayV0RLSA5vI9kg3cTwc2JHsrDSHC4XltLN2i7N15pnVr6mka4EtmaXuLcXLfUeV12xfrMzGy0dqiB4DmyQi1x6tPB9F7fXfxJN+25e3cTb9UlxA5uPktHNqNdTf99bVRDi5i4VkaodocyTvByRe3vhPrrUwt9Hzd3I7aX4v0KrV1M6SlsySRueQ7KTU10MjQZoWtJFw6M2ti61kut0wZdjqjA43XwsXCtfXWql7K0klQ+WQuleXXJe7lW4tLgo2gMjaPYJsWpU7wbSm7vyvCdJMdjbgFp6g9Vi+X6njpZ0pzRLtHLTwugjkxa+Vx0MgFWHsftIP1W+hqbsb0WPVG0e7CqTOwVB1RZt7rXVFZk4+d1qds3JV1ecNadpXn/ajURBTuY0/jSeEeg810usVjrPc8tvbGeF5jqdSayrfJclo8LfZdXBx97c3PydaVRayAeUWWWhdjje5fZDXGq0WEFxMlGXQOb5tOWlenNttFl89fZLrH/De0XcSPIiqmbHN/tdP3X0HH8ItwRhZWpoQhECEIQCEIQCEIQCEIQCEIQCEIQCEIQCEIQCo6lO2OJwN7AXcQrj3bBlct2irNsMo3EC2fVFjzv7QNSY9roGg3dZxXEUTLl8jyA7aQwn2yreuVf3vUJHtIcB5qeigPnIGc7BcXBb159ymMM6rarEYzFGQ0EuJt5YGEmi5JHAYbX9wrWpuE5ppIz4QAALWx4if6KhTuLaaR5xta0j64XowzI4OpY3Nblr2tt1AsVWkeHveRcZwP0VkFpM8JAF3HrwcEEf66qje9yObKDH/hkL237PWW7LaffrF4fqvEHOsM/Ne69hW7OzNA3ygZ+y5vk3+Lq+NP5Oja7FvJYvdG2/w8oFui4nYwc9bIDB6ELJAPIBUg2wsMD0SK1ms025sdSwfixGwI8jyoaZI7T5u+o3MAPxRZ2G/p0PGVtnsD2FruDgrVtgdSzbHH8MnB9F7Y5daeuHjlNZN9p+sQOpmxV0n4hJ3Oc3c039v6rJ7P6TVwMlkpRHKcl0ZIPztytKKLa18sDi0E9CkR6hX0j9rJnhtuDlvyC3ul+Lb/AIqtM7E0875O7rJmMjfgOAPS/wDVayr7C1RqBDR1zC14JJkaRsA9uVt6PXpYWysdE15J3El1gTZUndoqptZ97jijtYRuZuJGy9z81Zkz9fyo5+o7E1dPJLu1KntHH3hc9jhhcjF2kjZK6ngZNUON/gsQup1etqa+qqpZNRlZR1TRGadrLW9ndL9Vz8Dqemb9z06JsTXW32aCXfPlb1P1Lhyz+y5pMlXWz7zRPhEYvdzxm/7rsvuxjga5x8drkDoqOiMEdLGOG2xbr53W0qJWiI24HK5M7L6Yl0o1Em2Oxdlamoqm2IUtQqDYuvyuf1fUW0NE6WQ3dkNHmnHhaznnppO1WpbLwh5MsgO4fyhck3hNqZ5aqd807rveUvhfRwx8Zp8/LLdGVlvKwpDC0yu6XUOpamGpbcOjduuPRfUWg1zdR0ekq2cSxNePmF8sUwLvhsM4vwvo77OqtlT2dp2x2aImhnd3y2yi/jqkIQogQhCAQhCAQhCAQhCAQhCAQhCAQhCAQhQleGi18lBXrH+A+nK837e6j91h7neA+X4bmy9Arn7YHEm1+q8R7bas2s1uWKNu6KnjLWE4yeSjW9OYqHgGUjO29hb9VZoHuje0HgBrLe5yffKpOF7XwSc36q3QyWljk6d4CfYLUjFGovD3uYMMaxgaeCRYha/cWUzm25IHPkP81efE6U2OCxgB9f8AWVrqt26QBnJubDJVEiLNY7NnuuHHnAslujs2TNhi62Gn6Pq+ouDKHTp5Q1t/E3aPq6wV5/Zepoo3P1aqo6E4Hch3eykn+y3/ABUpI5l48HnhfQXZmLuNHpYrW2RNb9AvItO0OnqNShDHTvi7wAh4ALvWw4C9m01obE1g6YXH8jOXUdvBjrdrYsv0WXttlvJ5CxH19FNxXK6ChjnCYLcqDhj0WGuta/HmqGSNxf8AVVpAx42yC/qr0dngBKmg3XFrLUN6rW3mhBbE7cw52nlU5J3cvz5BzeFfmo5Wk7HFUnslZ8UYPyW5m6ePn8SopYRDtNtwcb36hUKh8YDs7AOFbIDTmMKvURtfnubj1V8ntPmSeo5utdLPEYIm/hl3XFvVVaOjLZdxyQVvqiEvBDrNaPJI7sR2A6cKXO3px8nLlnd1tKCQiMC9towVKsrGxwG56ZN+VrjVNhZzYWzdc9rWvwUrD3h3SH4GN5P+SmHHbXhnnMVrU6+KmidUVD9rG8N6uPkFwGrajLqdUZZPCxuI2X4CXXV9RqE3e1D7/wArRw1V7Luww8XHyclyHKzZZ2m17Y80ea28mELNvCT5IIINlQyB9rtXZdku1dd2fqSaV2+KQlskT+HHofThcVYFlxxwVchmu8biAJGi58ipYbez032k1Mm0upY2NsA4Od8JPt0T/wD9RZWsbvporuuG+M8j34XkNNVPiYO7cbAH9enstmydzoh94F2OAPGLHh3obrFlTb1Ck7fzVQO2CJrgOMlQqu22qROa2OniueBtvdecNnLHS+AslaCbi+SMOB9wmwVs01RGx0pLJAImuJAyfhP7C6l2bd5D29r5w9wETNh5LRaysM7Z1rr7ZIHWF7beAuCZPAHbpGbe9b4ri4B4OPSybTSQ93K3vCahryGt4AHlf/XKx2eT0OPtlPGAamCN7Oux1iF02lavSaqwmnfZ7fijdYELxtlSXGORjh3V9hDs46X/ANdVdoa+ShrRUQvcx4Is4cH39FZbFl29mQqOianFq2nRVcWLizm/yu6hYXpKq+hCEAhCEAhCEGHGzCVraycRt3yODWjqTz6BW55vyri+1HaJlLJK2CIPdDEX99Jbu4vU+vkPUK6Ee2+sO0rRyZZGmecgMjDrEMPkOT5leMTyMnmfJnvCbkkki3+KsazqdRq2oSV9XKTI8bY9x4aP2VKEbpBvtfkDzVkTaDQXyXceLWHkr0ceza4izcixxeyhp9M2Yh0rg3xEEk2wP91v+zvZ6t7Xak/uX9xQUrLTTbb92OjW+byBdUK7Mdn63tLWVEFI4xwNcwSVhb4Wck28zjhb/X/uvYfW36dp2nwEFjHid2XubbPiPW4PyXqmladRaTTMoaCAMp6c2aAMuJ5JPU4yVx/2kaGys17Sa+aMPYIpI3N83NILb/Iu+izndTbWGPllpo63XhPTs+6wCaq2gOneCALjNhfPzwuel0urqaiSrqpXzTPN7ny+S64UbLeAN5wQrDaK/wALRYY9FwZc1rvx4Ji1fZvRhC5k0gPhttAC7GBtjgcJNJBshaDa4AurUfK8rbfb09RZZwpOB+SgwpoN8dFAs5CieExzD+X6Jdj5IJMdt6pwqGj4lVcluNlqVNLj5mHoFTlO44S3SLOHA2KtWaihUMG6/VKIv8QsFanwFrp5zGDlZ7atinqcjI4iNzQebLRS1J3F+5oHUk4Cxq+oNBde73Xw1q5jVaieeMtcSGHJbcr348HjndRnWO0bmuMVE4OJOZHNuB7LmJHyTPc+R7nuccl2bqco8RCjGDmwXbhJHBllcmGtKkWm+1oJKdGwFpJBwLmyvUNINgmkdtBJ9yAP8Tb5LemVOeHa4MY3LW3IB6pDrAkDOFsZmd5UPbH4Qxviv5+arNH4T3O5cQGADoDymgp0ZENz1cRb5LBxIC7omWNwALi98rDGAzObxuaefNEJaLH+ySnOFg3HChE0uDgRxxYX91Znic2milA3bhf5Xt++EEqaXYC03236Lah7mGNj3bo+LA5DXBaI4s4HDgrtNIXQ2afHtLXBxtxkFZo2ZkqGWkkPIuCbZLDY+5IS9zmPLYyQ5xDM9Ry04WGzNa+LZHtbua/xYFnNtn55ShJsZdzrSNGA1ttxYb/PHRTSNlUVIJdN+H+KGVDgG8XJa9v1Fz7qw+dkbXHkOYXuBNi2RnxfMtsVVLGTP2NfeBsr4nC+AyZoLfUDdZKklJnhe7u3sdslk3HbtcRse0efCzobZlQx1NFK67ZYnlj27gLi2HW9j+isd8C2VjS4/wAm03BH+y1VMGxxugmIs9rSQD+Zh2u5OMFTp3D7wGh7nOazbe/xBpsT9LKaHo32YVpFRUUjiQJG72g35/2QuX7FVxou0VHd1ml4YdzuQcITTcu49sQhC0BCEIBKqJNkZd5Jq1GpVTQ2o3NBbFEHc8k8D3VGv7RV7KailY9+x0jyN+6xa3k/4X6crxTtVrUurVIZFIDSQta2OO+cZub9croPtD1SQ6pVMklIcWs5bfu2ci3vYe+T1XK6Voup6xqI0/R6YyVBAMjjgRtPVxtZoViKhaRGI/A57s3cy1ve63WhdlNW1yHdQUUndH46uQ7I3ejSRn3C9P7LfZhpejsZPrLhqVaDuu64hZ6BvX3P0Xb7RIWuc0bWizARwqPPtI+yuhY2MatWSTkfFDTnYwf9XxH9F20VNS0VEKGhp2QwRuvtY2w/zJPVXQwdB6fCFh7GOftbw0X45KCMMIY0NxYeZ5VLtJSio03eRuMD2yAfof0JWx7po6ZTA1r2FjxdrgQR5grOc3NNYXWUrhW0zS82904QBgPFiP6qy+ndSzSQyXJjNtx/MOh+YssytGy/sV8uzV0+nMtxhjbi6m0WWWiynZQZvhSYVG2EA2UDQ5ZfHvBscpYN1kH1KoS/wYdf5KBIPCsl+Mm6rysjPoUFebBKpTVD2ZY846FXJYrjD1SfTNI8bi5NrprqnWqgeBkbHu/um6188NfWtPfuLWHJaBZboxxtNgxvv1KHEbbptdOVqNMjhGBc+fkub1iMi67utYNt7Lj9cZcFx6L248u3jyTpyMw28fmOECIiFjbEOebqwYS+UDbuF8KyYhJWRxAEm+LdAB/ku+Pn1WLHCG4Hhkkta9rgYK2EDBskALWkMDb+5sP0N0mSMvbFG3ONpBHHn+ysvaDQzvabAyu97C2fbI+hXozsp0UbaOpnthxDY7/r+gCpmJ5s3k5HHFm3/qtnUs20sVOGEDYC7oSSbAfQfqqlQ8l7SAA3vSQ0HAFgP2RFJni2i9zaxP7JMrDuLvIjhWomEOtza97dCOFGWN/eEg2A5wiwmoicyTvW2buJTnncb5sGiw8hYXH1yrDKZ9VsFhcnYRxkcfulOp5qd/dTRPicRi4vZw6LIpSN7mS7SXRuOLlMBjw6Nrg8YIJuLealNC8E+EkOPFuVXddpx8iUVtYKkStDX/GIdo9wbgj9cJskl3OLSQN4uy1wNw/RauOUFo3NJAN9wVmNzmteS4ua5gdub5g4uoml/e6SnvcOd3A3G4x3b8foVkOEsb3NaQd8rbgeFpcA4e2QkMF3DZts5zmE38NnN8vdNkkkZFD4QQ8Qyl5GR+Uj2FlEWqqQzyscDHsls93d9NwAPzuFKKdrJwZd5BY6+0XtuBaSfmAqcj2xjuXlp7tjmgdRtfi/yKaGjbn8EDdsFicghw/dGau0sofWRTPkDHscyTHW1r/shVoX+JrgScEXPXlCzWpen0qhCFWwhCEC6iVsEMkr/hYCcC64evr3M0OWWokZu2SPlJ/K5p4P7fJdnqEb5qV8cdy53AHK1tFoFNGN+oiOokMneiANvG13Tn4jgc4WpB5poXYbVO1WoDVNZndTacSC3/zJQMN2g8D1PyXrOmabp+iUX3XTqaKmiJ3HaLl7v5nHkn1Vu8hJdge6TIM5s4+6qGM3Tf3FKRpGTYN8lKEO7p1gAlyx2H4hN+mUEWWcCXnHspsG0AnbtHQLNO0usDx0TX+BwBAz59EEHAeYWGkjhO249ksjaUGu1ulDmNqmD4BtkH9nz+RWq23BB8l1DCL2IBB5B4K0VdSmiqAzmGTELj0/sn/XC4/kcXflHXwcn5VVg8DT6KVroFjcNFgCQshcjpRKjlMIS3YRWWoPpwo3RewUUOKU8nzUi5Jc5RYi8nzVeROecKu83BVVVlyTZV3vs2xT5Rgqs8eH1KiKNXNcbQTgLnNUYJWnoL5JXRVMdni97HBKoVMOLWBcTgHqfNeuHt55zpyZjbG+Rzmjcxt2McbXKXE14aXNue8w0AW2nr+6t1jXPnljaLhth/eI/wB/0VuVs0sZMkpMscdmRi1mDGABgdfdd+OThyx7a5gDZe9Au1gIGfMFoS4oS+F8bms/gst5i7rn9ArlTGWQvDG5eQGjoRlo/Uq1p1EzuZ3yWfeWJwtexa25t9QV7Y9vLKEVsUsbu9MW2727CTxYCx98haeojPed22x2t3/XFiuh1+QlzmsaAXyBlr8WDbfsqFOxlRXims1rZ2NbYnre6rLWQxuuWuYQ4Hk9PVZjYO8u5rtr29Dnn/JbB9E9lVHDI1xedzI3XxIQbW+dlBscop+8jsO5cQ5oPiF+mfmoq1pVBPqEDo43XkY7b4mY44Prb91vf+z0sv3ZnjElgyRzWNABxk356LOkPG+B5mjNO6zJTa1nWO0m/wA7H5HgFdtpbxUMbJFIzeGY3NNgSBYjPGLKK4xv2e1Em51JXM3suXQyxYJ8hkEe5VJ3YX73E6nErYq5jvEJYy0N9yL/ALD3XqmnxbZJmv8AiGWl3A9Coa5SNfC2voIgK6BpLXXsHDq1w6g/NB4ZqnYzWtLa+WSCJzI7k7JmkgfzW6j2Wkpp9hdsOS0tIJsvoJlZS6nBDBFTRPqQ5r3GaMbYiDezSL29v8UjWOyOkavA7/idB3UpfudWQhrXDHJNs/RTSPDaWXu3slj4Y5ri0q24MnYBDs8LJSHDwizTu+uSrOv9lq/R31M8F6uhhftMzB4mDBBe3pyM8FaulqdspfsbtdcOb0IIsoWL9S0ufLMXnDxcFmSHMvdMjF8EuaO8Drh18Fh/wUe9aWOJOHRx9eowePRV4HkzAOJcGluA7+1b+qrC9E8HbYO2mTqcDi/7oVeEtDZOR4xYHgfL5coWbE2+n0IQTZHsFkBLc9Qc93RakDnG4Kw0JO4pjHLUQw4HASjnomudYKAyUQ1gPc45ukStO7xG591aeCIgByqrwL3N1lVim8LNx+JLkOS5NYLRBIlOQB81Yp8VtjXH2KJG4uluJaxoHVOjduACISOVmohjqYHQyjcx3Njkeo9VmVpvxZYjcBglTW/Z3vpzz4JKSoNPObl3iY+1t4/x8wsHldBV0sVXEY5m3YTcEHLT5jyK0FVDNRSbKjLHH8OYfC/38iuLl4fHuenbxc3l1RyEtzUF9iFMOFsrmdBQFlF7U4gKDsgeigrnlJdynvGVG3Q291GyHX8lXc1XCzyyoOiJ6IKTmX5SJI74aAVs3wkpT4w1pNre6I1c0FgdxBsM34C0+ryfdaN8tgZnAMiz1P8Avlb2eQEcg5x6rma6eOvro2RnfTQsve1s9T9bL0w9s5tXTUjYg+Z4NoctJGXO6n9bKUbXDvZXAlzmFuPK3+KubZZjHTQMc6Vz8MaLk5vj6/ou40HsozTtlZqGySqDT+FYOZETge54z9F1YS5Vy52Yx55relVOn6fptfUB0bnTDZFybXvuP0GFjTnsk7uKxcHOaMAXwXE/+8rrPtFic+go4DtJi2yMbfnLGnH/AFD6riKQGFzHxbHtjkeXtH5RcAfv+i7JNOS3a/qEJq9Wa5jZGDeSw/2s2wOlwfoqdXDt7QEtBFnWDW2ubY/UtK2u9z9TiihBLQGyMde1nt3vt8y4fVT1aDZrMc0brSvbhgO2zwSRc+pyPY9Fdiu6gbNpzpGAtmpKguYALuILiR9MKo3TpiY6gOEb5Ruu8eFzrm4+Vh/6gulbCXak9tIW9zURiWPvW2Ic6OxbbzDmhNoWyyPi7gSDvWCZ7bdS21rHk+ELNo0FDA77u6J0EkckI+Jhb8sfmAv6/qrFBrk1G+MidxY47XNeDZxGCPCCR15HSxvyugodMY8GSlLzE95jkgJPvdoP6gpQ0DVqdslJTzU0sbR3rN5cHg9LA+Hr5jpyoLmmdrmPma9tHI9xYHBzdxBPnkD2wugZV1WpAiVhiiebhkJIdbrcm1j7LhIKCsjc2JxhLGh25swD3BwdwDy3zsMLc0FNVOqHB+qVrnE7u777urY/mLr29rhDTo6fSY9DL6iniEcLzv8AupIcbn+W3JPuotFdrNXEayhfT0TAHiDe3dIRxuscW5zgJFFRVEEhkbT1EmPFM+ubM7jgb72+RCtOqoo4hFPR1hbY3bfawf3iwkHN1RrtYopYawvpXOa63jjheJNuM2v4jjkBcBrfYCSQPrNMLGO32a0+FklutrXYT5Wt9V6fC+GRzzTsaNrTtjgZta0+Z9VsKPTYnRulnaA55u5rSQPlZZHzYN0MgZNCWP6xkfFlP2sD5SLbS1x2u6WsbL2ztd2G0jXKUujjdBVMaRFJHyPcdQvFaqCo0yvkoK+MNmY4guAPiaRgi/Q2RLEiwsYwuLXAsdkc4PVCjJcN5BaQc+aFWNPqAuUCVN8b9m9hDvMJYId0sq9BZCksFURPClHdYsVloKaE33tlZpm3fdLKsUvha4pROU+J3oq23fIB5lOJBuT1WKcZLvLCgY/AsPZVnC7wE+Q4SoheUKCUvxsYPJBk7ohrcj9lJ4/58DyZdLDSZs+aC0QHNGbpL41m/dynyTjZw5GeFRXuQ2yHNZLGYpWNfG74muHKY5lvdLthKfu2nqtLfBufT7pIB+W3ib/itcb8g3C6lpLJBbCRWUMNUHE/hvP5x/ULk5fj77xdPFz66yc2JS05OE4NJFwlalSzUZHetsw8SDLT81mlfdq5LLj1XZMpfSLwQVDxX/sqzK0EpNsqLKjjpwsnnGQghSY3NlGmHN8BI6KlVBoYSSPc+S2BeAQ0Dc8/lvwPM+SpuiPelzgXvuQ1oGOegV1tNxpNRF4SSC0DgdTzYH/XRami0ysrphBQRGV2NzrWa0c3cfbouxHZ+SqvJqBMMA8WwHxHpb0wt5TQQ0MD4KaNsYaw2DR1tz7rp4uG3uufk55Oo1fZjQaXS4e9baaqebPmcMgeQHQLcOH8UPFy5+76ZH7KNCGhpbnwk2PmCVbnhDnA2Jxb6iy7ZjJNOHK23debfanLFTsortL3vgIs3qA9h/8AivOtOl7qoqJWHwu3bS75HP6L0L7SNz9CjdI4tfC98Z2ZFw47Qb+YuvOKKPvTVsByKaR7R0BHn9FpHfaXTRS6/TtkLw37yI7dNvdt+vB+iBSzw/8AE3VMLJ4qWra5wblzGsf0vzdlxZWdNjkk1GgnjA/jMmcAemzaLfNwytkylkvWMAfG+tfOS9rbndby9yFBQqhHVQ02pae9xa7aHWbYl18EfMJtC+1SwizBJCDszuDiSbeliHfos6TJGynnpJHDbHU7onEfFG5zXt+Qa8j5IiDqXU5WT2Yx7HRXOfhk3fs45HkVBuqWihbVTyUr3MLpe8A3YcLC2D6YVh7xTSPkm8IB7oF3wusOL9OqVpLN8UbgHsJhYXNLstcNwIJ68fot1G3vaFzZbu3gXz16f0S0aprmNJaxzTFIC5j2vBsb+fULaxxd5E1roWEjq43t8lWpKKCWLvDEwvbtu7bbd64V6KkiiaQGWaTYgPNuUgP+HaeTvkhjfIf7AOVCTT6Jx3CmZvvcWZfb9FbbG34TwDi7imiIgOu7gqirBTNa0m9gORYKzHGzZe7iB5myg0vc6wOAenVNlLImOmlzsBOVAiINkmLSxhaBm5Xm32ldmmVzKqWjh/5ui/FjLXZfGRct/cj1XplFu7nvXghzhchUW0zameuksMkNaT6BSrHzQybvIsOJvxdC3vbbQ/8Agevfgt201UTJC0/lN/G35H9ChNsafRkbu7yOqxM2xEjPgchMi8bXMPQXC3pogFZKw4bTZGUgyAskoBUXFVGRkqxDwQkMViEYKioTYTYhtiHrkpM2XBvmbKwcWtxZZ2FP6pURtIE12UsttYhBacLVLHfzMISagbXXHIKkJMwl3S4UJzd4PRBh8pe4kDHqlxSODy4jd0ARfax5PmotzgKi2x+8e3J8lJzOvRVy4xs8PIynNlBIbxgXQQkbhHLU1zVBwsiFEtsWyNDo3YLSLrWVWhBjjJpkuzr3EmWH2PI/VbNwUmO2+E5b09FjLCZe28c7i5mZz4ZBDWQyQPPwh3B9ncFBaOF0pDZGmORrXRu5DhcH5KtJp2nxC5jEbf7LiP6rlz4NdyunD5H5Y5+QBjdzyGjzOAoNjqasGOlBAP5w0kj2/wA10UNPpzXN2tDiDjvBuH6q5PI+KNx2tLQL+BZw4Zl+tZfI1+NLp2iyRRlk0mwXuXE3c5X4YIaONxib4r8nn6q3E9s7A8Dkcqo475XN+YXVhxY4ubPlyyIqOGMJ5sLef+sIe3wyvI8Rft/b/NZkYXTRE/zFTbk2J8Je4lerzRpWbb35DiAPQFPfKGvBJFtl0v4HEDOd3t5rEhD3O2HhosP3QcJ9o9F940PU3RtIDI2z7LXcSDb9h+6827PBp1Jgaw/8xE6F4IxdzDcAr1b7Q2SsoqgteBFUUkkLgSGi5Hn52uvKuyM22tilB3Fjxta4keKwH9UHcdj4zJR01REd0rKGPczodvXPW4IPsunY6eRkU0DvE+R7wHYDfiNifXwrnOykbBUNjBsYJTH5XhkJcz6Fp/8AUumo3uipKItZeMBocLcXxcfVQc1q8ULKqAx2jgrImMJJ27BfYSPUAj6+iv6tC6YUFe9u0mSMPbcjD2bT/wDcCEzVKVtS1sUEjgC4iPA8LX2/UOH6KzVxvdpEW59nubub4b5Dm/tY/UoG0Uph7t7ZHOD45A5osS1wyPT8zsei3ME7Htey4Bta9rf6C0ET2SVLKaoIbvc9jY7eTXgj3B25W9iO9m8ghwO02/e3yUqmUbTG6ogPmC3zAJNldZuttILgf1Vdsbm1YeG2JZYm/S5IVgNLydpaOot0VROzS299qw0vd4bhw6+awBZ3iN3HlyltaRe4VDB4bDu7eoKTV/jGOAY3Ou6/kMp4bsHoosA7x8pBIttaoMTPDGloI4wowsbHBnrk+6xtMpseB6KczgyM+g6orz77QNF/4voE7Im3qIXGeDz3jp8whdZLFupb7SCcoXlvTWm1IWWuLXgjzQVjqvfbzMnYCSW8HhVshXI/HGR1HCrytsggEcoBWUEmqxHhpSGpwNmFFQb4pQD7p5SIQXSn+6rOGtsVBXebZUmjc25NkSNu3d0S43HYQUGJidjGj+b+qZL0KgBchNmH7IKr8tI8zdSiKjIiM2QPcNzgOh59FE+KQDohpsxx6nCIuT6IJRTHvHgnATwd7Q7kHqqcWJneZUjeJw24PVA9zD0F/ZQLefRZilu/aeTm46KTHtcSG5KiEeJpFsg/lXOVfaAt1t1JLC0ND9ocX22/Ky6p0ccrNjnWd59QtXqGgw1dT96c1gqG28ZGHW4uPNeHPhllj09uLKS9ltqI5mEsLT4rbhwVsJHuZpWfi2/uq1DozKcjfIH5vtAsE3WCWU9hyXtH6ry+Pw5Y91eTKX0swsDIQ1vQJT47S387qfefh4FzwoVD3Oe/abBtrLseJLnNaYC45a+zvndKmcI3eTdwDvS6y0d4ZNxtgEfuq1S67Q13xN2hw80FoHZUgch9y2/n5LErTcuYbSWu0n0UqjNK145iIe35c/pdTqGtkZcHPIVGh7XxtrOzdRO9hOxhLg0XPBFh+y8JgjMLnRuu17Hteegb8vp8l9BzR/eaGop32uWlpuPTleGVsT26q/Yx4ikic1jnWu9zPEcjn4XWupVd5RMbBqUMkLTsmjcTc4sQS0ccXJXSQuvoLJHm4ZAxzD/MS2/PzC5Zm2fSKWYlokpWPa524HGCPmAQQPMLsNIDJ9Dp4nEObJEGm3Qjj9ERqKNokqbk/wDd5GSO8XMcl2n6Obf5q7qVNup5aYHu3Oqu8buFwN7XYI8rgYWuhgEpDY2uDZISwx9CA5v0+I5W8Le9Mfeiz3RsdcG1yHdfW5H1UVqqn8Wto6lhDAawPFugkjOPqCt/E0sqXbrDdjB8/wDRXNUszniIzQxXIjfKN1sZAI87AfqukyBTudkud3f64P7qC8NziHjyuM+qeQC/iwI4CV+c7RYFNA2mxF7Yutok7wWLVKMgi1hcrAcLAXUowBJYlASXEZA44+ag64AYMYUybvHJsLlRh8V3E8KCYbZtt3zsqkze/Jiu4jrlPlcTZjBk8+iyGiNoA56oK00LLeDGM2QmPAIKFnSno27hjlZKjctIIXqyzC/bKB8kyVliUuVoeN7Ob5CcDviB5PBWRTc2xWU1zfJLIsVRJiYeEtqY44RU6QeNxPomT4BSqU+Ig+SlI6+Tx0CgVuOyxJt5KDUO55WWIhjG44UpeApgfhXS3m9kVXkCgMKb1BvKKef4TUM4Q/gN9FgYRGGfxFKUj4jm36rEfx/JQcbkeaCcQIBLvicoQHdPK7o11rJwwFXgO2eUdC66C1A+9wTezlJx+LolwACVwTZW5v1Uok2xGQT/ANRVTUonSMjNrBsgJvnqmAuHJRVPvDJfp4kCoevqbKO65nI6Sf0U4sNP1SabPff/AFXfuqMObt8VsbbH0VKsO7bcZxcjgrZyNvGR1GQtXW4IHw+WcBKq/EC5luQRx/RJgIbH3TneOI2BJ5b0/RMiI2tc6+LXt0RMxrnb8OHqMkeqRCiy04czrcFeQdtaSSmrpp2u2ilmM0bQCA4AEkC/QhjhjHPmV6w9z4sua4NYQS4Zx7Lju3FAKiCpdGGyRPjLN1sRuuSPqdwHup7VrdB7iop3QF9xX0x2m+d4H0Dl1XZUvbRU9G8Czqdrr3wX2sLdeh+bV5j2TleyIslMwdDNscb+JrXDbcexufkvToyIKCGpiYAaZodtaL3FgSMfI/Mq6RWqWu0/UHwBtowSWn+VpF+OuVvCT37A9ps5jGBwOHH/AGDT9VqO1JaJ6eoZctmbl4HIsbH9bLZNePulLMWhrWOZ4fIWIx7XP0WdDm4InyN0edoItFG14vutc2LT9HceS6mKxiBaBZsjC0g36ea0GixzPo4i8EzNcx2LfzXB+Q/dbynaYmNjbYs3v2kcYef6WUqtuw8XGM8+ym7plQhzELnkE/VNkBLb4yFpEoW3cD6qxMLPDvJV6W+0EXTqgm2be4QLDvE53mFgO7uENb8bjhAA7rxYtz6rDRYGR5u48DyHkgywd2CT8R591F2TdSORcqKBbhhCyeEKBywsrC9EYa7Y64GOqdFYOIabtePoUhwwpQu2vzwpRO1uUt46p0wIdfoodEEWhZchuEOVGYD+LbzBF1OowkAlrmkchwTqjp6rKq98psaSPiViIIiwRaGyrvVp+Ivkqb1VJflEA3PA9UO6opMEuPRQMedzyQg8LAQ5BmMZJ9Cln4gmM4d7JZ+IIHHi6rO8MwPmVZBuLKvML+6CxEfxrq25t1r6d9y3zGCtiCLKBD22Sp27o5B5tIVp9lAtygpwuD4mEdWqFILiQ+cjv3UNOd+E9vVji39U2lFmP/vu/dIGP4PqFRqWBzg3qr/VUanErbdVaJxt4LTb2UgdpO0WPmpMAcL/AFUntDgSUgrSOc2Vl9trrV9pdKbqVDKJS5hcwtHdOsd1w5uODkfqtk+EODmsu07bp8je+pSMF23w7hi44UV4UGO03VyZJN8VXubITYeMWx9SvTuytU2vo4t4G50DA4N6PALXH+h+S5bt1p8bXTwlpaJx94jJHwyBhvx/0n3V7sNqVMNUFE521sgJheMeOwDh/wC0gf2kGw7QQyO0yJhLxJDU7PINcbAj+7faVdiqWO0mOTPdggAOIPxC4Nutif3WO0zdtPNNY3e0Bwv/AOIzLT8xcfJaShqah+kVAgDWvgcAS4XsA4gAepGFButCaWUQbjfvYb3wATu/wW5kitCCzAdUFwv0DmnH7LQ6VA6ngjpo9zoxaJj+N21rB/iuoe1stK4cgE2t5jhXQnTG4F1bkaNo9lTgBDA781/EFbDg8EHoMJpEaJx7t4GBusnPy9ren9FXpDfvgP51ZaQ0F5/NgeyoU6zpbflGfdSF3G7seSjhzgbEACyk83Fuigi/LrDhRKlwLKJQRchBQgY5rojZ3iZ0d1HusZGP1TWSD4X5CjJG6M3jy09D/RaQtRUw4OyDnqDyFBw5wgsB/ewj+ZvKglwv2vDTwRZMeNr7dEGQsOWR0WSEEGtu9t+LhNmUoxi6hIoquPiVqEKqB41dhCInL/DVR6tyKq9VSH/CURYjIUn5aVFiBqiVlRUokzh3slH4k1nDkrqgawqMw4f5YKGqZG5paeCECIfDKR5FbIua2Pe42A5WriNpnX5AV+puadthexF1jK6lWFSVL9w+Fg6AjlTgqO8d3bwA+1wfNafU6nuHAAyFzjcBgum6ZI+evZtbhjC6Q9B0A/15Ll4+TK5PTw62zH/y+o1MPRx7xvz5VuAfh+5JVbUBt1eBw/PGR9CrbMABdkeSSo1P8aP3V4qnWDxx+hVoZH5BTeHWzhRZ0TecJBXtZrnJlNd8AHVvCxO0MY63kpUjbtdbmyaHLdraFslNG/bd0czTGTwA5wDm38s3+ZXE1UbKDVqOpBcymqXlpJA3Ry/lJ/8ASLH09F6jqkYfFC0//wCmL5gOBP7Litf058jpImMAfJZzNpFt1yQLdL4/9SK32vS/e9HklIYyTu2vcRxuGL+2WrnOzsYZqWqUTvDH963OG7nvPI/IfVY7Naoyv0+KnbIZe6DqaRrrBxZIBtcR6EW/6liJxpNYdGfw3SNEm7FgAWl3/v8A0ULG87Nv+808EslmttFZotZriCTa3qQP+ldREfwwOCC6/wBVzHZZsjtIovw3MdKe+DeA1otYD5ELpoX94HOA82/K6SolT+Enytax6J0mJS2Pk4Hsktc0MDRzYZ8kxg2M3EXd535V2MUf8KVw5MhA/ZWTlwaeBhV6Nu2JoPJe9/64Vl+Tfr0UEX5e39Vg5KwMn2UkGCorJUXIMFCEIM281NktsPy1RcFEjC3UOfE2U7m/F/MOUgvey4lHh/mHCGSOY70TwWyDooKx4Dm5TnO3MY4eVj7pclNYkxnb7cLED/EYpRsJ4PQlNizG2+VN4RTfw8qUhFvZBlotGlOUwSYr+qg5FV//ABAr0XAKpNzKr7RZqiIPzdIenO5S3qqQ/iyizlSeoN5QNKgVM8JfKCbfgd7JQTW/A72SmqCbVNps4X4UGKTkCHjbUPHmFsGWkp7KjUfxGP6Ftlcp/wCD8lLBWqKGKpy8yA8Ydj9lapoIqZm2JgaOTnlYGEw8KTGSrutbqA//AHGkceCxw+eE5vPzS9Wx92k/llt8iExp8QsrESdyqtZ+U+RVp5yqs+XkeaoYzDUxmSkxG7c8p7cG6BVV8NvNMojY56hKqjge6zA4Fw8rZQJqSXSwNva8hPHkFr9cpQ6Pe1heXC5Z/Nblot5tv8wFsX7n1cYJ8LWk/sB/X6Jsvwg2y117IPLaSkjo+1JpciGsa4QuZ8TCLG4+dr/JVO0tTNT1jZGSNkmZCTG+Ru4neAQCBa/wjK2/bCD7hX0lRT2a+CqjfC4GwDXYyfIED6LU1sn3zW6Nr29wzuiXhpzZpdg+uR9FFd/oe+OOGMBoLWu8NyfiPF/Sy2GmlzXSxSeJ27C1HZp/ewwyeO4gZuLnZwN3/wAluZmmKqY8O+I2yVBYkaRE0Bv5bG3oVIHwuHlwpxxvmjtGcg3N8XykVTjTTwQkAumkIaL9ACT+yqLkIAFhwsvNuOVFrgMdVjcCT7q6EmC3Kyi6xfKaVgrBWSVElEYKEIQMKieFKyiVpCnhQDtpwU4pbggYyTcLLEg3Nt/oJKnuxYqUOpJ/HY5vkprnbnenRc/JWGHXWUzgQ0RiUO8wTa31XQNy5pSUN6ADhQeMKV/xEP4Q0qsF5VsLWaqEf8VXz8CKU5QKYolEIkCUBYqxa7lJ0e4IK91FTcwt5CigkPgd7JLPhCe34Xeyrx/wwgc1DliNTcMKBUw3U9/5SCrVI7dH6JDW7g8ebVKgPgI8ipVPtlTUWBzyWtx5qx3HhO0nd5+ao1moRmWm2j4t7dv1TW0srTctuOLXTJmkHYecK4HANL3cWUFX7o85JA9FRq4JInFzxdt8EK+aw9GY901jmTMJAwcFBqadpfKGtFy5WnQSMAuwm+MFQp4u61IMvgXt7WWzle2NpcThBqqqlkbGHuc0BuSClUrXuka1guSrFXWte10YYcjm6t0cIggt1dlyorNoZC9zi5gwBgeX+6w6lmLXMtYead99Bce6Zdoda5VqOQPGOeoUHnX2jac4aLIZdrWSU74iL38i0/XHzXI6Pp1XWahSVlIDPM+nk3AYDT4hYk+osvUu2VI2t090TgD4HOBt5Wv/AK9lU7M6bHo9FFSja4xt/EktbcSRf5K1VjTNDqIKZrJJotzLi4ubjbZXKyklZGHEA7cggdf9FYbq7RJtZHdjibOLvM24V99dGYgQ27zjaeiyFaO7dG/N7EdPdJqKOoqNXbUMY3uYo3MBLrHcSOPkEzR/C+YWtkY+qsvqHRSPbtxyM8oEysMYDHY3deVGOJ0pOxvueimZDUvYA0NurpLIY/7I4CorfdHW+Jt/RJljdE4bwbeisffHXHgxfndmye4NnjtbDkGtPCimiMmTu28jCsCiaW5fZ3mERSAvhCY9phNngD1WFQNmY87ctd/K7BWXCynJFHMLPaD5X6JBjlj+B24dA4rSJEJblnvxcNlBY7+0suz1FvNAshROFMhQcMKK1WuU7nwMrIsS0x3WHVhtuH9Vu9OlEo53BreVXvtsOifpdOyFlS9hO2R+B5Y4CgtMy9Sk4WIh4lKXhVIrRfxCrx4VKIfiFXUCyFE4CmVB6QL6pjSoKbAtUTLWnlKdE0phQsBDmkBVgwgWV53CgAFRWZcHhM5CbsCxtsEC4vjI9CsUI/FePVMYLOul0/hnPqirsBDZi0nkYVppHmtfIclZbI8i2931WRKc7phb0TXtLoC1vNki3ib/AHgrQIEZJ6INYTz6cq1pzC2Jzn3Bc66slrD4trfolvma0WaQ53kOioq86sCPK36KxW/93I9UiGItqmPcfO91ZqbOhIBBN0GmcCZSBzwt4BuiweWrVtaA5x63VynnAaGPxnBSik1pjZ3Zwd55V+jBu45thOLY5BctDx62Q2SM3DXNG3p5IKOqCwY4kWF7j06rWVcT6iGqihf4nizP3C2mqubsbJcFrGuLgDyLf7rgux/asS6pJpmo+GUOc6CQDBjudod5G1sqVXRyMHfwh4AJbZzbdP8ARWyjY8RB5Z4SBZxV2NsE7Y5gI32ALXix5HQpks0bGbQQ9wHwhEVdPxJI49QP6or8SCx6G6rmsioo3SzeGLcGuP8ALc4/UrYU8sFTCyRro5GuGDgqKRSENlZ9P0VuqaXREDkG6TUlgc3u7H+6OE6Cbe0b/CfXqqKKv07S2Ec+o8kzu2fEWtv5pM8wa3bHa/U9EConWqncWJOVbOFq3vJHCiZZTjvHW8r4QT1Fwkk2tOALFYSgLNQqizdZ3ALHRQctom4Ne0ggEHkFV3UxHigftI/KchS3WKcx+7CgpGV0eJ2Ef2hkLIc148P1V5zBY34VSWlYTui/DPpx9FAsjCt0bv8Ali0c7/8ABUQ5zXbXG5806nkLHPb5kFBsIuViXO73RTnI91h3HzVCmYerY4VUfEFaHwqCJGVB/KmoO5SCA5U2qHVTarRJCwsrIwVCymVg8K7ELlZ5CwVnoqBoylMFqgJg+JYbmVSiUvxqLTlTkHiKgBlZUwfE3+8FYl/gO/11SH4ASYHExuufzn91ZBmQC17ZSKbw39ynO4So/jKtD3uuQEt+HYU3DLUSDKgRfxlSPDr8IeMhDv4ZI54REYzaPj0Utlr3ybKLWkEsvgG6YbGS3kFVUtQeIqKRwFyGE2svKSx1B2rLo3b3QwshjGbusByfpf5L1mqaO4jHVzufZef1jW/8aoqrY1z5oy518YcOP/tUI6js/GIdPhhbkNgaPTFwVuICdjbi2AtT2eO7SIQedxGOi3EXxvb5EhSCtq0BnoKhjQC5wDR73Cno9D/w/T6alfIZHRRhpfxuKcRuYP71/wCqezlXSmNsOMeykXCyWeEXwmkDnXUCpoKaCnBRTSFiyCFrhCnayEH/2Q==" alt="Dr. D. Ramyaa Karthies, MDS Prosthodontist" style="width:100%;height:100%;object-fit:cover;object-position:center top;">
+      </div>
+      <div class="about-copy">
+        <span class="eyebrow">About the Dentist</span>
+        <h2>Meet Dr. D. Ramyaa Karthies</h2>
+        <p>At Confi Dental Smilez, dentistry is approached with calm precision and genuine empathy. Dr. D. Ramyaa Karthies believes every patient deserves an unhurried consultation where clinical choices are explained in clear, relatable terms.</p>
+        <p>With advanced specialization in Prosthodontics and Crown Bridge, she combines restorative mastery with gentle clinical technique, ensuring treatments are durable, functionally natural, and pain-managed with utmost care.</p>
+
+        <div class="cred-grid">
+          <div class="cred"><small>Qualifications</small><span>BDS, MDS</span></div>
+          <div class="cred"><small>Specialisation</small><span>Prosthodontics &amp; Crown Bridge</span></div>
+          <div class="cred"><small>Practice Location</small><span>Keelkattalai, Chennai</span></div>
+          <div class="cred"><small>Clinical Focus</small><span>Crowns, Implants, Endodontics &amp; Aesthetics</span></div>
+        </div>
+
+        <a href="https://www.practo.com/chennai/doctor/d-ramyaa-karthies" target="_blank" rel="noopener" class="btn btn-outline">View Verified Profile on Practo &rarr;</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 3: TREATMENTS -->
+  <section id="treatments">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Comprehensive Dental Care</span>
+        <h2>Evidence-Based Treatments Tailored to You</h2>
+        <p>Honest, transparent treatment plans. We prioritize tooth preservation, restorative durability, and long-term biological comfort over unnecessary procedures.</p>
+      </div>
+
+      <div class="treatments">
+        <article class="treatment">
+          <div class="icon">01</div>
+          <h3>Dental Implants</h3>
+          <p>Permanent tooth replacement engineered for natural chewing function, jawbone integrity, and seamless visual harmony.</p>
+          <a href="https://www.practo.com/chennai/doctor/d-ramyaa-karthies" target="_blank" rel="noopener">Book on Practo &rarr;</a>
+        </article>
+        <article class="treatment">
+          <div class="icon">02</div>
+          <h3>Crowns &amp; Bridges</h3>
+          <p>Precision-crafted prosthetic crowns and multi-unit bridges to restore structural strength, biting comfort, and natural enamel aesthetics.</p>
+          <a href="https://www.practo.com/chennai/doctor/d-ramyaa-karthies" target="_blank" rel="noopener">Book on Practo &rarr;</a>
+        </article>
+        <article class="treatment">
+          <div class="icon">03</div>
+          <h3>Root Canal Treatment</h3>
+          <p>Gentle endodontic therapy designed to relieve acute pain, eliminate inner pulpal infection, and preserve natural tooth structure.</p>
+          <a href="https://www.practo.com/chennai/doctor/d-ramyaa-karthies" target="_blank" rel="noopener">Book on Practo &rarr;</a>
+        </article>
+        <article class="treatment">
+          <div class="icon">04</div>
+          <h3>Dentures &amp; Prosthodontics</h3>
+          <p>Complete and partial customized prostheses tailored for optimal suction fit, effortless speech, and balanced mastication.</p>
+          <a href="https://www.practo.com/chennai/doctor/d-ramyaa-karthies" target="_blank" rel="noopener">Book on Practo &rarr;</a>
+        </article>
+        <article class="treatment">
+          <div class="icon">05</div>
+          <h3>Restorative Fillings</h3>
+          <p>Tooth-colored micro-hybrid composite fillings, enamel bonding, and repair of chipped edges that blend invisibly with your teeth.</p>
+          <a href="https://www.practo.com/chennai/doctor/d-ramyaa-karthies" target="_blank" rel="noopener">Book on Practo &rarr;</a>
+        </article>
+        <article class="treatment">
+          <div class="icon">06</div>
+          <h3>Cosmetic &amp; Preventive</h3>
+          <p>Professional ultrasonic scaling, deep polishing, smile shade brightening, and preventative health screenings for the entire family.</p>
+          <a href="https://www.practo.com/chennai/doctor/d-ramyaa-karthies" target="_blank" rel="noopener">Book on Practo &rarr;</a>
+        </article>
+      </div>
+
+      <div class="treatment-note">
+        <p>Every procedure begins with a clinical evaluation, high-definition digital imaging, and an itemized treatment roadmap.</p>
+        <a href="https://www.practo.com/chennai/doctor/d-ramyaa-karthies" target="_blank" rel="noopener">Book Consultation &rarr;</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 4: EXPERIENCE -->
+  <section id="experience" class="experience">
+    <div class="container experience-grid">
+      <div class="experience-visual">
+        <div class="placeholder" style="height:100%;">
+          Upload: consultation / clinic image (Figma section 4 image)
+        </div>
+      </div>
+      <div>
+        <span class="eyebrow">Our Clinical Approach</span>
+        <h2 style="margin-bottom:40px;">A Calming, Transparent Approach to Oral Health</h2>
+        <div class="pillars">
+          <div class="pillar">
+            <div class="num">1</div>
+            <div>
+              <h3>Understanding Your Concerns</h3>
+              <p>We take the time to listen to your past dental apprehensions, pain history, and cosmetic goals before proposing interventions.</p>
+            </div>
+          </div>
+          <div class="pillar">
+            <div class="num">2</div>
+            <div>
+              <h3>Clear Digital Explanations</h3>
+              <p>Visualizing tooth anatomy, micro-cracks, and shade selections through high-resolution imaging removes ambiguity.</p>
+            </div>
+          </div>
+          <div class="pillar">
+            <div class="num">3</div>
+            <div>
+              <h3>Informed Decision-Making</h3>
+              <p>Transparent phase-by-phase roadmaps with clear cost projections. You remain entirely in control of your clinical journey.</p>
+            </div>
+          </div>
+          <div class="pillar">
+            <div class="num">4</div>
+            <div>
+              <h3>Immaculate Clinical Hygiene</h3>
+              <p>Rigid multi-stage autoclave sterilization protocols and sanitized operatory suites maintain pristine clinical safety.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 5: GALLERY -->
+  <section>
+    <div class="container">
+      <div class="gallery-head">
+        <span class="eyebrow">Clinical Environment</span>
+        <h2>Designed for Calm, Precision, and Comfort</h2>
+        <p>A modern medical space free of hospital harshness: warm oak textures, gentle natural lighting, and whisper-quiet ergonomic dental units.</p>
+      </div>
+
+      <div class="gallery">
+        <div class="tile wide">
+          <div class="placeholder" style="height:100%;">Upload: main operatory photo</div>
+          <div class="label">
+            <small>Main Operatory Suite</small>
+            <strong>Ergonomic Dental Chair with High-Resolution X-Ray Monitor</strong>
+          </div>
+        </div>
+        <div class="tile">
+          <div class="placeholder" style="height:100%;">Upload: chairside consultation photo</div>
+          <div class="label">
+            <small>Diagnostic Clarity</small>
+            <strong>Interactive 3D Patient Consultation</strong>
+          </div>
+        </div>
+        <div class="tile photo-doctor">
+          <div class="placeholder" style="height:100%;">Upload: clinical oversight photo</div>
+          <div class="label">
+            <small>Expert Leadership</small>
+            <strong>Dedicated Clinical Oversight</strong>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 6: REVIEWS -->
+  <section id="reviews" class="reviews">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Transparent Feedback</span>
+        <h2>Trusted by Patients Across Chennai</h2>
+      </div>
+
+      <div class="rating-badge">
+        <div class="score">5.0</div>
+        <div>
+          <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p>Verified patient feedback on Practo Healthcare</p>
+        </div>
+      </div>
+
+      <div class="reviews-grid">
+        <div class="review">
+          <p>&ldquo;Identified the exact problem and clearly explained the next steps.&rdquo;</p>
+          <div class="by"><strong>Verified Patient</strong>Practo &middot; Recent</div>
+        </div>
+        <div class="review">
+          <p>&ldquo;She listens carefully and explains treatment options in detail until I understand.&rdquo;</p>
+          <div class="by"><strong>Verified Patient</strong>Practo &middot; Recent</div>
+        </div>
+        <div class="review">
+          <p>&ldquo;Dr. Ramya gives accurate and honest dental recommendations.&rdquo;</p>
+          <div class="by"><strong>Aswathy</strong>Verified patient on Practo</div>
+        </div>
+      </div>
+
+      <div class="more">
+        <a href="https://www.practo.com/chennai/doctor/d-ramyaa-karthies" target="_blank" rel="noopener" class="btn btn-glass">Read All Reviews on Practo &rarr;</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 7: LOCATION -->
+  <section id="location">
+    <div class="container location-grid">
+      <div class="location-copy">
+        <span class="eyebrow">Visit Confi Dental Smilez</span>
+        <h2>Conveniently Located in Keelkattalai</h2>
+        <p>Our clinic is in the Saroja Ammal Complex on Medavakkam Main Road, Keelkattalai, easily reachable from Madipakkam, Nanmangalam, Kovilambakkam and Chromepet.</p>
+
+        <div class="details">
+          <div class="detail">
+            <h3>Clinic Address</h3>
+            <p>No. 29, Saroja Ammal Complex, 1st Floor, Medavakkam Main Road, Keelkattalai, Chennai &ndash; 600117, Tamil Nadu, India. Above Mother's World Supermarket.</p>
+          </div>
+          <div class="detail">
+            <h3>Direct Clinic Phone</h3>
+            <p><a class="phone" href="tel:+917397310335">+91 73973 10335</a></p>
+          </div>
+          <div class="detail">
+            <h3>Consulting Hours</h3>
+            <p>Monday to Sunday: 10:00 AM &ndash; 1:30 PM and 4:00 PM &ndash; 9:00 PM</p>
+          </div>
+        </div>
+
+        <a href="https://www.google.com/maps/search/?api=1&query=Confi+Dental+Smilez+Keelkattalai" target="_blank" rel="noopener" class="btn btn-dark">Open in Google Maps &rarr;</a>
+      </div>
+
+      <div class="map-card">
+        <iframe
+          src="https://www.google.com/maps?q=Confi+Dental+Smilez+Keelkattalai,+Chennai&output=embed"
+          title="Map showing Confi Dental Smilez, Keelkattalai, Chennai"
+          style="position:absolute; inset:0; width:100%; height:100%; border:0;"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          allowfullscreen></iframe>
+        <div class="map-tag">
+          <div>
+            <strong>Saroja Ammal Complex, 1st Floor</strong>
+            <span>Medavakkam Main Rd, Keelkattalai</span>
+          </div>
+          <a href="https://www.google.com/maps/search/?api=1&query=Confi+Dental+Smilez+Keelkattalai" target="_blank" rel="noopener">Get Directions</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 8: FAQ -->
+  <section id="faq" class="faq">
+    <div class="container faq-wrap">
+      <div class="faq-head">
+        <span class="eyebrow">Patient Inquiries</span>
+        <h2>Frequently Asked Questions</h2>
+        <p>Clear answers about scheduling, clinic protocols, and visiting our Keelkattalai clinic.</p>
+      </div>
+
+      <div class="faq-item open">
+        <button class="faq-question" aria-expanded="true">How do I schedule an appointment with Dr. D. Ramyaa Karthies? <span class="chev">&#9660;</span></button>
+        <div class="faq-answer">
+          <p>You can schedule an appointment through our verified Practo clinic profile, or call our clinic desk directly at <a href="tel:+917397310335">+91 73973 10335</a> for assistance.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">Where is Confi Dental Smilez situated in Keelkattalai? <span class="chev">&#9660;</span></button>
+        <div class="faq-answer">
+          <p>We are at No. 29, Saroja Ammal Complex, 1st Floor, Medavakkam Main Road, Keelkattalai, Chennai 600117, above Mother's World Supermarket.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">What happens during my first consultation? <span class="chev">&#9660;</span></button>
+        <div class="faq-answer">
+          <p>Every procedure begins with a clinical evaluation, high-definition digital imaging, and an itemized treatment roadmap. Digital 3D scans and radiographs are shared openly on chairside screens so you see and understand every clinical finding.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">Which dental treatments are performed at the clinic? <span class="chev">&#9660;</span></button>
+        <div class="faq-answer">
+          <p>Our services include dental implants, crowns and bridges, root canal treatment, dentures and prosthodontics, restorative fillings, and cosmetic and preventive dentistry. See the Treatments section above for details.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">Can I read verified patient experiences before visiting? <span class="chev">&#9660;</span></button>
+        <div class="faq-answer">
+          <p>Yes. You can read verified patient feedback on our <a href="https://www.practo.com/chennai/doctor/d-ramyaa-karthies" target="_blank" rel="noopener">Practo profile</a>.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 9: CONTACT CTA -->
+  <section class="final-cta">
+    <div class="container">
+      <div class="cta-card">
+        <span class="eyebrow">Schedule Your Visit</span>
+        <h2>Ready to Prioritize Your Oral Health?</h2>
+        <p>Experience unhurried consultations and thoughtful dental care in Keelkattalai. Choose your preferred time on Practo or connect with our front desk right away.</p>
+        <div class="cta-buttons">
+          <a href="https://www.practo.com/chennai/doctor/d-ramyaa-karthies" target="_blank" rel="noopener" class="btn btn-primary">Book via Practo &rarr;</a>
+          <a href="tel:+917397310335" class="btn btn-glass">Call Clinic: +91 73973 10335</a>
+        </div>
+        <p class="cta-note">Online appointment scheduling is handled securely through Practo.</p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="container footer-grid">
+    <div>
+      <div class="brand">Confi <span style="color:var(--teal-light)">Dental</span> Smilez</div>
+      <p style="margin-top:8px;">Keelkattalai, Chennai 600117</p>
+    </div>
+    <div>
+      <p><a href="tel:+917397310335">+91 73973 10335</a></p>
+      <p>Mon&ndash;Sun: 10:00 AM &ndash; 1:30 PM, 4:00 PM &ndash; 9:00 PM</p>
+    </div>
+    <div>
+      <p><a href="https://www.practo.com/chennai/clinic/confi-dental-smilez-kilkattalai-1" target="_blank" rel="noopener">Clinic on Practo</a></p>
+      <p><a href="https://www.practo.com/chennai/doctor/d-ramyaa-karthies" target="_blank" rel="noopener">Doctor on Practo</a></p>
+    </div>
+  </div>
+</footer>
+
+<a href="tel:+917397310335" class="call-float">Call Clinic</a>
+
+<script>
+  // Mobile menu
+  const toggle = document.getElementById('menuToggle');
+  const navLinks = document.getElementById('navLinks');
+  toggle.addEventListener('click', () => {
+    const open = navLinks.classList.toggle('open');
+    toggle.setAttribute('aria-expanded', String(open));
+  });
+  navLinks.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => navLinks.classList.remove('open'));
+  });
+
+  // FAQ accordion (one open at a time)
+  document.querySelectorAll('.faq-item').forEach(item => {
+    const button = item.querySelector('.faq-question');
+    button.addEventListener('click', () => {
+      const isOpen = item.classList.contains('open');
+      document.querySelectorAll('.faq-item').forEach(other => {
+        other.classList.remove('open');
+        other.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
+      });
+      if (!isOpen) {
+        item.classList.add('open');
+        button.setAttribute('aria-expanded', 'true');
+      }
+    });
+  });
+</script>
+
+</body>
+</html>
